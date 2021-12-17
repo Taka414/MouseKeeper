@@ -10,12 +10,12 @@
 ## 使い方/usage
 
 * ja
-  * [ここからzipファイルをダウンロード](https://github.com/Taka414/MouseKeeper/releases/download/1.0.0/)し解凍します。
+  * [ここからzipファイルをダウンロード](https://github.com/Taka414/MouseKeeper/releases/tag/1.0.0)し解凍します。
   * MouseKeeper.exe を実行します。
   * タスクトレイにマウスポインターのアイコンが表示されるとアプリケーションが動作しています。
   * アプリケーションを終了するにはタスクトレイのアイコンのコンテキストメニューから「終了(X)」を選択します。
 * en
-  * [Download](https://github.com/Taka414/MouseKeeper/releases/download/1.0.0/) the zip file from here and extract it
+  * [Download](https://github.com/Taka414/MouseKeeper/releases/tag/1.0.0) the zip file from here and extract it
   * Run MouseKeeper.exe.
   * When the mouse pointer icon is displayed in the task tray, the application is running.
   * To quit the application, select "Quit (X)" from the context menu of the icon in the task tray.
