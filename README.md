@@ -22,9 +22,13 @@
 
 ## 説明
 
-このツールはあなたがPC操作を1分中断すると、30秒ごとにOSに対しシグナルを送信し、PCを操作しているように見せかけます。
+このツールはあなたがPC操作を1分中断すると、30秒ごとにOSに対しシグナルを送信し、PCを操作しているように見せかけます。技術的な詳細は以下リンクを参照ください。
 
-This tool sends a signal to the OS every 30 seconds when you stop operating your PC for a minute, making it appear as if you are operating your PC.
+This tool sends a signal to the OS every 30 seconds when you stop operating your PC for a minute, making it appear as if you are operating your PC. For technical details, please refer to the following link (in Japanese only)
+
+
+
+[リンク/Link](https://takap-tech.com/entry/2021/12/17/234029)
 
 ## License
 
