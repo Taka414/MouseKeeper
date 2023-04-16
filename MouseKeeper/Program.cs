@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Takap.Utility.MouseKeeper
 {
-    static class AppMain
+    static class Program
     {
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
@@ -13,8 +13,7 @@ namespace Takap.Utility.MouseKeeper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            var form = new FormTaskTray();
+            _ = new FormTaskTray();
             Application.Run();
         }
     }
