@@ -21,14 +21,14 @@ namespace Takap.Utility.MouseKeeper
         public FormTaskTray()
         {
             InitializeComponent();
-            this.Visible = false;
+            Visible = false;
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
             try
             {
-                // 1分以上位置が変わらなかった場合30秒に一度ポインタを刺激する
+                // 45秒以上位置が変わらなかった場合30秒に一度ポインタを刺激する
                 var now = DateTime.Now;
 
                 var pos = Cursor.Position;
@@ -38,7 +38,7 @@ namespace Takap.Utility.MouseKeeper
                 }
                 _pos = pos;
 
-                if (now - _lastMoved > TimeSpan.FromSeconds(60))
+                if (now - _lastMoved > TimeSpan.FromSeconds(45))
                 {
                     if (now - _movedPos > TimeSpan.FromSeconds(30))
                     {
