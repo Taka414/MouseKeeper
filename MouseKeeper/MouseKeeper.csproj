@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Takap.Utility.MouseKeeper</RootNamespace>
     <AssemblyName>MouseKeeper</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -52,6 +52,7 @@
     <Compile Include="FormTaskTray.Designer.cs">
       <DependentUpon>FormTaskTray.cs</DependentUpon>
     </Compile>
+    <Compile Include="MultiStartupUtil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormTaskTray.resx">

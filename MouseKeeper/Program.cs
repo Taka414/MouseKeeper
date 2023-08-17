@@ -13,10 +13,22 @@ namespace Takap.Utility.MouseKeeper
         [STAThread]
         static void Main()
         {
+            MultiStartupUtil.SingleStartupContext("_mouse_keeper", _Main);
+        }
+
+        private static void _Main()
+        {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             _formTaskTray = new FormTaskTray();
-            Application.Run();
+            try
+            {
+                Application.Run();
+            }
+            finally
+            {
+                using (_formTaskTray) { }
+            }
         }
     }
 }
