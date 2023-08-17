@@ -5,8 +5,6 @@ namespace Takap.Utility.MouseKeeper
 {
     static class Program
     {
-        static FormTaskTray _formTaskTray;
-
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
@@ -20,14 +18,9 @@ namespace Takap.Utility.MouseKeeper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            _formTaskTray = new FormTaskTray();
-            try
+            using (FormTaskTray formTaskTray = new FormTaskTray())
             {
                 Application.Run();
-            }
-            finally
-            {
-                using (_formTaskTray) { }
             }
         }
     }
